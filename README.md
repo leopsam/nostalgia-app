@@ -29,9 +29,27 @@ Para iniciar o projeto localmente, siga os passos abaixo:
     npm install
     ```
 
-4. Execute as migrações do Prisma para criar o banco de dados SQLite:
+
+4. Edite o arquivo .env com as suas configurações:
+
     ```bash
-    npx prisma migrate dev --name init
+    DATABASE_URL="file:./dev.db"
+    # Edite outras variáveis de ambiente conforme necessário
+    ```
+5. Aplique as migrações do Prisma:
+
+    ```bash
+    npx prisma migrate deploy
+    ```
+6. Gere o cliente Prisma:
+
+    ```bash
+    npx prisma generate
+    ```
+7. Inicie o servidor:
+
+    ```bash
+    npm run dev
     ```
 
 ## Scripts Disponíveis
