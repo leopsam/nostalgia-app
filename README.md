@@ -1,4 +1,4 @@
-# nostalgia-app
+# nostalgia-app-back-end
 
 Este projeto serve como uma base para utilização de informações (famoso copiar e colar). Ao longo do tempo, ele se transformará em um projeto bem grande.
 
