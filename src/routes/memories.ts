@@ -1,6 +1,7 @@
 import { FastifyInstance } from 'fastify'
 import { z } from 'zod'
 import { prisma } from '../lib/prisma'
+import '@fastify/jwt'
 
 export async function memoryRoutes(app: FastifyInstance) {
   app.addHook('preHandler', async (req) => {
