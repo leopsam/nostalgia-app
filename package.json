@@ -7,7 +7,8 @@
     "dev": "tsx watch src/server.ts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint:fix:format": "eslint . --ext .ts --fix && prettier --write \"src/**/*.ts\""
   },
   "keywords": [],
   "author": "",
@@ -15,8 +16,8 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20.14.11",
-    "@typescript-eslint/eslint-plugin": "^7.17.0",
-    "@typescript-eslint/parser": "^7.17.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -29,8 +30,10 @@
   "dependencies": {
     "@fastify/cors": "^9.0.1",
     "@fastify/jwt": "^8.0.1",
+    "@fastify/multipart": "^8.3.0",
     "@prisma/client": "^5.17.0",
     "axios": "^1.7.2",
+    "cloudinary": "^2.4.0",
     "fastify": "^4.28.1",
     "zod": "^3.23.8"
   }
